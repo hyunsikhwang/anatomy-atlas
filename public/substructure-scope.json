@@ -1,0 +1,132 @@
+{
+  "source": "BodyParts3D named surfaces and HRA named components",
+  "parentCounts": {
+    "brain": 29,
+    "heart": 10,
+    "right-lung": 4,
+    "left-lung": 3,
+    "liver": 12,
+    "small-intestine": 3,
+    "large-intestine": 7,
+    "pancreas": 2,
+    "neck-bones": 2,
+    "pelvis": 3,
+    "spine": 4,
+    "left-eye": 4,
+    "right-eye": 4,
+    "penis": 3,
+    "female-pelvis": 4,
+    "female-large-intestine": 8,
+    "uterus": 4,
+    "left-mammary": 3,
+    "right-mammary": 3,
+    "vagina": 2
+  },
+  "brainCortex": "Available named gyri grouped by cortical region; not a complete cortical parcellation",
+  "heartVentricles": "Cavity and papillary-muscle surfaces; no invented ventricular wall",
+  "lungRegistration": "Revision 13: original HRA bilateral scale and one shared translation for both lungs and all children; see lung-audit.json",
+  "coordinateRule": "All child vertices retain their source registration; only exploded mode displaces them",
+  "appendixCorrection": {
+    "maleAppendix": "BodyParts3D FJ2565, FMA14542; original native coordinates",
+    "maleCecum": "BodyParts3D FMA14541 resolves to FJ2599 ileocecal junction; moved from common ileum to male colon",
+    "femaleAppendix": "Existing HRA node 490 and cecum node 493; geometry and registration unchanged",
+    "sourceChunkSha256": "1babeeb1464594a4e6d4689d2d73338d3e3b38fecb8a2f406820308950935e37",
+    "sexRule": "One appendix and one cecum in each sex configuration; presence is not a sex difference"
+  },
+  "spine": {
+    "cervicalVertebrae": 7,
+    "thoracicVertebrae": 12,
+    "lumbarVertebrae": 5,
+    "intervertebralDiscs": 23,
+    "sacrum": "Both original sacra individually selectable as fused S1–S5; linked from spine, rendered once within pelvic hierarchy",
+    "coccyx": "Female HRA node 964 individually selectable; no separately supplied male surface; presence is not a sex difference"
+  },
+  "pelvicExtractionChecks": [
+    {
+      "parent": "pelvis",
+      "sourceId": "FJ3152",
+      "maxSourceBoundsErrorMeters": 7.450580596923828e-09
+    },
+    {
+      "parent": "pelvis",
+      "sourceId": "FJ3288",
+      "maxSourceBoundsErrorMeters": 7.450580596923828e-09
+    },
+    {
+      "parent": "pelvis",
+      "sourceId": "FJ3393",
+      "maxSourceBoundsErrorMeters": 0.0
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 963,
+      "maxSourceBoundsErrorMeters": 5.234012612209682e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 964,
+      "maxSourceBoundsErrorMeters": 2.181237621079468e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 967,
+      "maxSourceBoundsErrorMeters": 1.8972778348391728e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 968,
+      "maxSourceBoundsErrorMeters": 1.199830922116174e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 970,
+      "maxSourceBoundsErrorMeters": 3.368759160515822e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 971,
+      "maxSourceBoundsErrorMeters": 2.6440811207173454e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 974,
+      "maxSourceBoundsErrorMeters": 7.560619352808828e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 975,
+      "maxSourceBoundsErrorMeters": 7.276844016246287e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 977,
+      "maxSourceBoundsErrorMeters": 7.326023093723322e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 978,
+      "maxSourceBoundsErrorMeters": 7.106365190745478e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 981,
+      "maxSourceBoundsErrorMeters": 1.8992857286903586e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 982,
+      "maxSourceBoundsErrorMeters": 3.1823110813178346e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 984,
+      "maxSourceBoundsErrorMeters": 1.9068693291046657e-09
+    },
+    {
+      "parent": "female-pelvis",
+      "sourceId": 985,
+      "maxSourceBoundsErrorMeters": 2.691426304046729e-09
+    }
+  ],
+  "vagina": "Native external vaginal envelope and cervicovaginal junction; no synthetic mucosal folds or lumen reconstruction"
+}

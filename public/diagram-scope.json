@@ -1,0 +1,73 @@
+{
+  "kind": "optional-educational-schematic",
+  "supportedRoots": [
+    "vagina",
+    "uterus"
+  ],
+  "sex": "female",
+  "originalStructureCount": 193,
+  "originalPack": "anatomy-v13",
+  "profiles": "/models/diagram-profiles-v1.json",
+  "originalGeometryModified": false,
+  "method": "Convex envelopes of planar cross-sections through registered HRA source surfaces constrain an optional loft. The cervical channel is anchored to the supplied external and internal cervical-os centers; the vaginal channel meets the same external-os landmark. Uterine inclination is retained. Tissue colors, relative thickness, luminal width and rugae are educational constructions, not source segmentations or measurements.",
+  "tissues": {
+    "vagina": [
+      "mucosa with schematic transverse rugae",
+      "smooth muscular wall",
+      "connective-tissue adventitia"
+    ],
+    "uterineCorpus": [
+      "endometrium",
+      "myometrium",
+      "perimetrium on the illustrated corpus"
+    ],
+    "cervix": [
+      "cervical mucosa",
+      "predominantly connective-tissue cervical stroma"
+    ]
+  },
+  "landmarks": {
+    "externalOs": [
+      -0.00199864,
+      0.89064944,
+      -0.02424901
+    ],
+    "internalOs": [
+      -0.00225804,
+      0.89911324,
+      -0.01051247
+    ],
+    "sourceNodes": [
+      481,
+      480
+    ],
+    "coordinateSystem": "meters, Y superior, X patient left, Z anterior; existing female registration"
+  },
+  "controls": [
+    "variable anterior cutaway width",
+    "individual tissue visibility",
+    "tissue selection and camera focus",
+    "vaginal rugae visibility",
+    "original exterior overlay",
+    "connected tract",
+    "return to original model"
+  ],
+  "limits": [
+    "Potential lumina are deliberately opened for visibility; depicted wall thickness, colors and fold amplitude are not measurements.",
+    "The convex envelope is a smooth teaching approximation and does not reproduce every concavity of the source exterior. Original geometry is retained separately and can be overlaid.",
+    "The upper vaginal/ectocervical mucosal connection is simplified; individual fornices and the epithelial transformation zone are not reconstructed.",
+    "The distal vaginal ring is an illustrative wall cut, not a reconstruction of the vaginal introitus or hymen. Vulva, labia and external genital microanatomy are outside this cutaway.",
+    "Uterine layers illustrate the corpus. Cervical mucosa and connective-tissue stroma are separately classified; the corpus endometrium is not continued down the vagina.",
+    "Endometrial cycle-dependent layers, glands, vessels, fine innervation and histological cells are not reconstructed. No menstrual phase is asserted.",
+    "Tubal and ovarian lumina/microanatomy are not added. Existing source tubes and ovaries remain context structures, with no artificial ovary-to-tube attachment.",
+    "Other organs retain their existing source substructures and surface clipping. No CT, MRI, patient-specific reconstruction or clinical validation."
+  ],
+  "sources": [
+    "https://training.seer.cancer.gov/anatomy/reproductive/female/tract.html",
+    "https://histologyguide.com/slideview/MH-173-vagina/18-slide-1.html",
+    "https://histologyguide.com/slideview/MHS-207-cervix/18-slide-1.html",
+    "https://histology.leeds.ac.uk/home/female/uterus/",
+    "https://doi.org/10.48539/HBM352.BTSQ.586"
+  ],
+  "originalGeometryScope": "Diagram mode never modifies source geometry. Revision 13 independently repairs lung registration; genital diagram profiles and source anatomy remain unchanged."
+}

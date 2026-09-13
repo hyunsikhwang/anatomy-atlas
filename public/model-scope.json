@@ -1,0 +1,17 @@
+{
+  "commonReference": "BodyParts3D 4.0 adult male base; common teaching reference, not a sex-specific body scan",
+  "male": "BodyParts3D native male reproductive organs",
+  "female": "HRA female reproductive organs, pelvis, bladder, colon and developed mammary structures aligned as one assembly",
+  "femaleTransform": {
+    "scale": 1.0,
+    "translation": [
+      0.00854099885225296,
+      0.8740711877822875,
+      0.056982621705532074
+    ]
+  },
+  "pregnancyModelsIncluded": false,
+  "surfaceLimitations": "Native external envelopes and selected internal components; no reconstructed microscopic layers, vaginal rugae, or separate vulvar surfaces. Clipping does not add tissue or cap lumina.",
+  "representationAudit": "/surface-audit.json",
+  "lungRegistration": "/lung-audit.json"
+}

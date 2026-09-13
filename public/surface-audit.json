@@ -1,0 +1,93 @@
+{
+  "revision": 11,
+  "structures": 193,
+  "corrections": [
+    {
+      "removed": "FJ1449M",
+      "retained": "FJ2542",
+      "name": "Left coccygeus",
+      "concept": "FMA46444",
+      "boundsIntersectionOverUnion": 0.9933313454692079,
+      "reason": "Redundant mirrored representation of the same named left pelvic structure"
+    },
+    {
+      "removed": "FJ1450M",
+      "retained": "FJ2543",
+      "name": "External anal sphincter",
+      "concept": "FMA21930",
+      "boundsIntersectionOverUnion": 0.9853785999294711,
+      "reason": "Redundant mirrored representation of the same named left pelvic structure"
+    },
+    {
+      "removed": "FJ1453M",
+      "retained": "FJ2544",
+      "name": "Left iliococcygeus",
+      "concept": "FMA45859",
+      "boundsIntersectionOverUnion": 0.9892303354066926,
+      "reason": "Redundant mirrored representation of the same named left pelvic structure"
+    },
+    {
+      "removed": "FJ1457M",
+      "retained": "FJ2545",
+      "name": "Left pubococcygeus",
+      "concept": "FMA45855",
+      "boundsIntersectionOverUnion": 0.9926560483017749,
+      "reason": "Redundant mirrored representation of the same named left pelvic structure"
+    },
+    {
+      "removed": "FJ1458M",
+      "retained": "FJ2546",
+      "name": "Left puborectalis",
+      "concept": "FMA45857",
+      "boundsIntersectionOverUnion": 0.9954310255285401,
+      "reason": "Redundant mirrored representation of the same named left pelvic structure"
+    },
+    {
+      "removed": "FJ1895",
+      "retained": "FJ2629",
+      "name": "Pancreatic exterior",
+      "medianNearestVertexDistanceMeters": 1.0013580322265625e-05,
+      "reason": "Whole-organ envelope overlapped its parenchymal envelope"
+    }
+  ],
+  "vagina": {
+    "originalNodes": [
+      431,
+      432
+    ],
+    "newSelections": [
+      "vagina--surface",
+      "vagina--junction"
+    ],
+    "shapeChanged": false,
+    "interpretation": "Native external envelope, not an opened mucosal illustration; connected organs retain their original HRA assembly transform",
+    "unavailableDetails": [
+      "Mucosal rugae and histological wall layers",
+      "Separate vulvar surfaces such as labia minora and majora"
+    ]
+  },
+  "sectionRendering": "Only supplied mesh triangles are clipped. Artificial solid cut fills removed from every structure; tissue layers and luminal histology are not reconstructed.",
+  "auditLimits": [
+    "Educational composite of different reference bodies, not a clinically certified full-body anatomy",
+    "A source-coordinate audit cannot certify every upstream anatomical segmentation or individual variation",
+    "Different named source components are retained unless redundancy can be established; no synthetic replacement of missing anatomy"
+  ],
+  "references": [
+    "https://training.seer.cancer.gov/anatomy/reproductive/female/tract.html",
+    "https://my.clevelandclinic.org/health/body/22469-vagina",
+    "https://github.com/ashemag/human-atlas",
+    "https://doi.org/10.48539/HBM352.BTSQ.586"
+  ],
+  "validation": {
+    "sourceCoordinatesNormalsTriangles": 149,
+    "femaleSourceBoundsAndCounts": 35,
+    "registeredLungChildPreservation": 7,
+    "documentedRegisteredLungParents": 2,
+    "meshSelections": 193,
+    "cameraFits": 3860,
+    "localClippingChecks": 579,
+    "parentChildSelections": 114,
+    "contextCameraFits": 36,
+    "panProjectionChecks": 45
+  }
+}

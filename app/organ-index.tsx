@@ -1,0 +1,15 @@
+"use client";
+import {useEffect,useState} from 'react';
+import {ChevronDown,ChevronRight} from 'lucide-react';
+import type {Structure,Sex} from './anatomy-types';
+
+type Props={structures:Structure[];sex:Sex;layers:string[];selected:string|null;ready:boolean;onSelect:(id:string)=>void};
+export default function OrganIndex({structures,sex,layers,selected,ready,onSelect}:Props){
+ const [expanded,setExpanded]=useState<Set<string>>(()=>new Set(['brain','spine']));
+ useEffect(()=>{const part=structures.find(s=>s.id===selected);const root=part?.parentId??(part?.childrenIds?.length?part.id:null);if(root)setExpanded(previous=>previous.has(root)?previous:new Set(previous).add(root));},[selected,structures]);
+ const toggle=(id:string)=>setExpanded(previous=>{const next=new Set(previous);if(next.has(id))next.delete(id);else next.add(id);return next;});
+ return <div className="info-section organ-index"><h3>기관·구조 목록 <span>{structures.length}</span></h3>{layers.map((name,layer)=><details key={name} open={layer===2||structures.some(s=>s.id===selected&&s.layer===layer)}><summary><span className={'index-dot index-dot-'+layer}/>{name}<ChevronRight size={14}/></summary><div>{structures.filter(s=>!s.parentId&&s.layer===layer).map(parent=>{
+  const children=structures.filter(s=>s.parentId===parent.id),related=structures.filter(s=>parent.relatedIds?.includes(s.id)),open=expanded.has(parent.id),ancestor=[...children,...related].some(s=>s.id===selected);
+  return <div className="organ-group" key={parent.id}><div className={'organ-parent-row '+(ancestor?'has-selection':'')}><button disabled={!ready} className={'organ-row '+(selected===parent.id?'is-selected':'')} onClick={()=>onSelect(parent.id)}><span>{parent.name}</span>{!children.length&&<ChevronRight size={14}/>}</button>{children.length>0&&<button className="substructure-toggle" onClick={()=>toggle(parent.id)} aria-label={parent.name+' 세부 구조 '+(open?'접기':'펼치기')} aria-expanded={open} aria-controls={'children-'+parent.id}><span>{children.length}</span>{open?<ChevronDown size={14}/>:<ChevronRight size={14}/>}</button>}</div>{children.length>0&&open&&<div id={'children-'+parent.id} className="substructure-list" role="group" aria-label={parent.name+' 세부 구조'}>{children.map(child=><button disabled={!ready} className={'organ-row substructure-row '+(selected===child.id?'is-selected':'')} key={child.id} onClick={()=>onSelect(child.id)}><span className="substructure-color" style={{background:child.color}}/><span>{child.name}</span></button>)}{related.length>0&&<div className="related-structures"><span className="related-caption">연결 구조</span>{related.map(part=><button disabled={!ready} className={'organ-row substructure-row '+(selected===part.id?'is-selected':'')} key={part.id} onClick={()=>onSelect(part.id)}><span className="substructure-color" style={{background:part.color}}/><span>{part.name}</span></button>)}</div>}{parent.relatedIds&&selected!==parent.id&&parent.noticeBySex?.[sex]&&<p className="structure-notice">{parent.noticeBySex[sex]}</p>}</div>}</div>;
+ })}</div></details>)}</div>;
+}

@@ -1,0 +1,57 @@
+name: Import verified model assets
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-model-assets.yml']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Restore exact model assets from the existing public viewer
+        env:
+          MODEL_IMPORT_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64, hashlib, json, os, pathlib, subprocess, urllib.request
+          assert os.environ["GITHUB_REPOSITORY"] == "hyunsikhwang/anatomy-atlas"
+          env = os.environ.copy()
+          token = env.pop("MODEL_IMPORT_TOKEN")
+          env["GIT_CONFIG_COUNT"] = "1"
+          env["GIT_CONFIG_KEY_0"] = "http.https://github.com/.extraHeader"
+          env["GIT_CONFIG_VALUE_0"] = "Authorization: Basic " + base64.b64encode(("x-access-token:" + token).encode()).decode()
+          def git(*args):
+              return subprocess.run(["git", *args], env=env, check=True, capture_output=True, text=True).stdout.strip()
+          git("init")
+          git("remote", "add", "origin", "https://github.com/hyunsikhwang/anatomy-atlas.git")
+          git("fetch", "--depth=1", "origin", "main")
+          git("checkout", "-B", "main", "FETCH_HEAD")
+          assert git("rev-parse", "HEAD") == os.environ["GITHUB_SHA"], "Branch advanced; rerun on latest main"
+          models = json.loads("[[\"public/models/anatomy-v13-0.bin.part\",12000000,\"49b3ef859743f87f4823eadf115475497b946e3f6ca0d01874f8e4fc05513081\"],[\"public/models/anatomy-v13-1.bin.part\",12000000,\"473e1bd095c95e3c6035f6a7625552b15fab8fcb201e901a655dee4bb3b9b156\"],[\"public/models/anatomy-v13-2.bin.part\",12000000,\"ff789a67f6f19bbd07253339c0933fe856d681062fdf7d82c2d3b82352706207\"],[\"public/models/anatomy-v13-3.bin.part\",3882810,\"43f08cb985c233ee4d82d9fcc2bb01fcca3788b20b52b4385ac37227464feb5f\"]]")
+          for name, size, checksum in models:
+              path = pathlib.Path(name)
+              if path.exists():
+                  data = path.read_bytes()
+              else:
+                  url = "https://anatomy-atlas.wonderful-writing.chatgpt.site/models/" + path.name
+                  with urllib.request.urlopen(url, timeout=120) as response:
+                      data = response.read(size + 1)
+              assert len(data) == size, "Unexpected size: " + name
+              assert hashlib.sha256(data).hexdigest() == checksum, "Checksum mismatch: " + name
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_bytes(data)
+              print("Verified:", name, size, flush=True)
+          git("add", "--", *[row[0] for row in models])
+          changed = subprocess.run(["git", "diff", "--cached", "--quiet"], env=env).returncode
+          assert changed in (0, 1)
+          if changed:
+              git("config", "user.name", "github-actions[bot]")
+              git("config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+              git("commit", "-m", "Import checksum-verified 3D anatomy model assets")
+              git("push", "origin", "HEAD:main")
+          print("Model asset import complete", flush=True)
+          PY

@@ -1,0 +1,380 @@
+{
+  "bodyParts3D": {
+    "url": "https://raw.githubusercontent.com/ashemag/human-atlas/main/public/models/atlas.json",
+    "manifestSha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+    "parts": [
+      {
+        "id": "FJ3152",
+        "name": "Right hip bone",
+        "conceptId": "FMA16586",
+        "system": "skeletal",
+        "chunk": 11,
+        "positions": 3471872,
+        "normals": 3484304,
+        "indices": 3490520,
+        "vertexCount": 1036,
+        "indexCount": 5694,
+        "bounds": [
+          [
+            -0.14487200000000003,
+            0.8302642000000001,
+            -0.09888122
+          ],
+          [
+            -0.0027903,
+            1.0359802,
+            0.039019
+          ]
+        ],
+        "packedBounds": [
+          [
+            -0.14487199485301971,
+            0.8302642107009888,
+            -0.09888122230768204
+          ],
+          [
+            -0.002790299942716956,
+            1.035980224609375,
+            0.03901899978518486
+          ]
+        ],
+        "packedGeometrySha256": "e6b9a2b808fdc4443df4ff054d67dfa7cc4f682d36a9fc23748ce774b704de5d",
+        "existingParentVertexMaxErrorMeters": 7.450580596923828e-09
+      },
+      {
+        "id": "FJ3288",
+        "name": "Left hip bone",
+        "conceptId": "FMA16587",
+        "system": "skeletal",
+        "chunk": 12,
+        "positions": 3845976,
+        "normals": 3857808,
+        "indices": 3863724,
+        "vertexCount": 986,
+        "indexCount": 5424,
+        "bounds": [
+          [
+            0.0027503099999999997,
+            0.8300622000000001,
+            -0.09868506
+          ],
+          [
+            0.144754,
+            1.0362012,
+            0.03909499999999999
+          ]
+        ],
+        "packedBounds": [
+          [
+            0.0027503101155161858,
+            0.830062210559845,
+            -0.09868506342172623
+          ],
+          [
+            0.14475399255752563,
+            1.0359262228012085,
+            0.03874799981713295
+          ]
+        ],
+        "packedGeometrySha256": "af62627e16aa46370f1642380f150c49517dc51612250eb08177243922888571",
+        "existingParentVertexMaxErrorMeters": 7.450580596923828e-09
+      },
+      {
+        "id": "FJ3393",
+        "name": "Sacrum",
+        "conceptId": "FMA16202",
+        "system": "skeletal",
+        "chunk": 13,
+        "positions": 1816160,
+        "normals": 1849412,
+        "indices": 1866040,
+        "vertexCount": 2771,
+        "indexCount": 15174,
+        "bounds": [
+          [
+            -0.059591200000000004,
+            0.8609482,
+            -0.10725375000000001
+          ],
+          [
+            0.0582029,
+            1.0053112,
+            -0.018603599999999998
+          ]
+        ],
+        "packedBounds": [
+          [
+            -0.05948539823293686,
+            0.8609741926193237,
+            -0.10725375264883041
+          ],
+          [
+            0.05816299840807915,
+            1.0053112506866455,
+            -0.018603600561618805
+          ]
+        ],
+        "packedGeometrySha256": "88d5da83c92e24ab9454de4eaab8550aa3a9ef711d67fd6a8ca25e094c5341e8",
+        "existingParentVertexMaxErrorMeters": 9.313225746154785e-10
+      }
+    ]
+  },
+  "hraFemale": {
+    "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.5/assets/3d-vh-f-united.glb",
+    "manifestSha256": "b886255d95467b622d585f1ba81b824c188dfb7900122c20daf3cd400b838ce8",
+    "parts": [
+      {
+        "id": 963,
+        "name": "VH_F_sacrum",
+        "vertexCount": 9786,
+        "indexCount": 58908,
+        "bounds": [
+          [
+            -0.0718221739,
+            0.0438412279,
+            -0.182454556
+          ],
+          [
+            0.05559626,
+            0.142881781,
+            -0.077560246
+          ]
+        ]
+      },
+      {
+        "id": 964,
+        "name": "VH_F_coccyx",
+        "vertexCount": 697,
+        "indexCount": 4170,
+        "bounds": [
+          [
+            -0.023621263,
+            0.0182205718,
+            -0.178314477
+          ],
+          [
+            0.008286065,
+            0.0451690555,
+            -0.140327886
+          ]
+        ]
+      },
+      {
+        "id": 967,
+        "name": "VH_F_pubis_spongy_bone_L",
+        "vertexCount": 1203,
+        "indexCount": 6936,
+        "bounds": [
+          [
+            -0.00899343751,
+            -0.0370649621,
+            -0.0767849162
+          ],
+          [
+            0.08298981,
+            0.0520601943,
+            -0.0098499395
+          ]
+        ]
+      },
+      {
+        "id": 968,
+        "name": "VH_F_pubis_spongy_bone_R",
+        "vertexCount": 1132,
+        "indexCount": 6516,
+        "bounds": [
+          [
+            -0.100811459,
+            -0.0388361,
+            -0.07869211
+          ],
+          [
+            -0.009307546,
+            0.0521613955,
+            -0.009593372
+          ]
+        ]
+      },
+      {
+        "id": 970,
+        "name": "VH_F_pubis_compact_bone_R",
+        "vertexCount": 2540,
+        "indexCount": 15240,
+        "bounds": [
+          [
+            -0.1016399,
+            -0.0400948562,
+            -0.07894393
+          ],
+          [
+            -0.008095011,
+            0.0528743975,
+            -0.008380246
+          ]
+        ]
+      },
+      {
+        "id": 971,
+        "name": "VH_F_pubis_compact_bone_L",
+        "vertexCount": 2688,
+        "indexCount": 16128,
+        "bounds": [
+          [
+            -0.0101935146,
+            -0.03830082,
+            -0.07702131
+          ],
+          [
+            0.08353852,
+            0.0528367944,
+            -0.00863266
+          ]
+        ]
+      },
+      {
+        "id": 974,
+        "name": "VH_F_ilium_compact_bone_R",
+        "vertexCount": 5907,
+        "indexCount": 35430,
+        "bounds": [
+          [
+            -0.166996166,
+            0.0247490648,
+            -0.165550262
+          ],
+          [
+            -0.0520111136,
+            0.164658442,
+            -0.00394060137
+          ]
+        ]
+      },
+      {
+        "id": 975,
+        "name": "VH_F_ilium_compact_bone_L",
+        "vertexCount": 6344,
+        "indexCount": 38052,
+        "bounds": [
+          [
+            0.0310990941,
+            0.0256427284,
+            -0.165461272
+          ],
+          [
+            0.149841726,
+            0.164003819,
+            0.000289921765
+          ]
+        ]
+      },
+      {
+        "id": 977,
+        "name": "VH_F_ilium_spongy_bone_L",
+        "vertexCount": 3052,
+        "indexCount": 18066,
+        "bounds": [
+          [
+            0.0323054,
+            0.0269521568,
+            -0.164234191
+          ],
+          [
+            0.148623258,
+            0.162666261,
+            -0.0009347915
+          ]
+        ]
+      },
+      {
+        "id": 978,
+        "name": "VH_F_ilium_spongy_bone_R",
+        "vertexCount": 2838,
+        "indexCount": 16791,
+        "bounds": [
+          [
+            -0.165809736,
+            0.0254762974,
+            -0.164335623
+          ],
+          [
+            -0.05321742,
+            0.1633057,
+            -0.00515670748
+          ]
+        ]
+      },
+      {
+        "id": 981,
+        "name": "VH_F_ischium_compact_bone_R",
+        "vertexCount": 2695,
+        "indexCount": 16170,
+        "bounds": [
+          [
+            -0.126990825,
+            -0.0468344279,
+            -0.126262426
+          ],
+          [
+            -0.04617209,
+            0.0481639467,
+            -0.05853817
+          ]
+        ]
+      },
+      {
+        "id": 982,
+        "name": "VH_F_ischium_compact_bone_L",
+        "vertexCount": 2696,
+        "indexCount": 16176,
+        "bounds": [
+          [
+            0.0269800946,
+            -0.04536852,
+            -0.123958968
+          ],
+          [
+            0.109789543,
+            0.04937872,
+            -0.0592191778
+          ]
+        ]
+      },
+      {
+        "id": 984,
+        "name": "VH_F_ischium_spongy_bone_R",
+        "vertexCount": 1196,
+        "indexCount": 6873,
+        "bounds": [
+          [
+            -0.125854686,
+            -0.0454946049,
+            -0.125060856
+          ],
+          [
+            -0.0470986925,
+            0.0476474762,
+            -0.0594033748
+          ]
+        ]
+      },
+      {
+        "id": 985,
+        "name": "VH_F_ischium_spongy_bone_L",
+        "vertexCount": 1198,
+        "indexCount": 6888,
+        "bounds": [
+          [
+            0.027776489,
+            -0.04402396,
+            -0.122732788
+          ],
+          [
+            0.108600147,
+            0.0489828959,
+            -0.0600879528
+          ]
+        ]
+      }
+    ]
+  }
+}

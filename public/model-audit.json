@@ -1,0 +1,800 @@
+{
+  "date": "2026-09-13",
+  "scope": "Included reference structures: source identity, topology duplicates, regional grouping, laterality, sex filtering, geometry and selection",
+  "duplicateSurfacesRemoved": [
+    {
+      "removed": "FJ2772",
+      "retained": "FJ3201",
+      "maxVertexDifferenceMeters": 0.0
+    },
+    {
+      "removed": "FJ2440",
+      "retained": "FJ2769",
+      "maxVertexDifferenceMeters": 0.0
+    },
+    {
+      "removed": "FJ2386",
+      "retained": "FJ1916",
+      "maxVertexDifferenceMeters": 0.0
+    },
+    {
+      "removed": "FJ1450",
+      "retained": "FJ2548",
+      "maxVertexDifferenceMeters": 1.0132789611816406e-06
+    }
+  ],
+  "regionalReassignments": [
+    {
+      "sourceId": "FJ3201",
+      "name": "Hyoid bone",
+      "previous": "skull",
+      "corrected": "neck-bones",
+      "reason": "Hyoid/laryngeal anatomy belongs to the neck group"
+    },
+    {
+      "sourceId": "FJ2773",
+      "name": "Left cuneiform cartilage",
+      "previous": "skull",
+      "corrected": "neck-bones",
+      "reason": "Hyoid/laryngeal anatomy belongs to the neck group"
+    },
+    {
+      "sourceId": "FJ2795",
+      "name": "Right cuneiform cartilage",
+      "previous": "skull",
+      "corrected": "neck-bones",
+      "reason": "Hyoid/laryngeal anatomy belongs to the neck group"
+    },
+    {
+      "sourceId": "FJ1521",
+      "name": "Descending part of right trapezius",
+      "previous": "head-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1521M",
+      "name": "Descending part of left trapezius",
+      "previous": "head-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1524",
+      "name": "Right cervical rotator",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1524M",
+      "name": "Left cervical rotator",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1533",
+      "name": "Right longissimus capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1533M",
+      "name": "Left longissimus capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1538",
+      "name": "Right semispinalis capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1538M",
+      "name": "Left semispinalis capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1549",
+      "name": "set of anterior cervical intertransversarii",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1549M",
+      "name": "Set of anterior cervical intertransversarii",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1552",
+      "name": "set of interspinales cervicis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1552M",
+      "name": "Set of interspinales cervicis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1553",
+      "name": "set of posterior cervical intertransversarii",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1553M",
+      "name": "Set of posterior cervical intertransversarii",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1555",
+      "name": "Left digastric",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1556",
+      "name": "Right digastric",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1559",
+      "name": "Left geniohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1560",
+      "name": "Left digastric",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1561",
+      "name": "Left longus capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1562",
+      "name": "Left mylohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1563",
+      "name": "Left obliquus capitis inferior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1564",
+      "name": "Left obliquus capitis superior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1566",
+      "name": "Left rectus capitis anterior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1567",
+      "name": "Left rectus capitis posterior major",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1568",
+      "name": "Left rectus capitis posterior minor",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1569",
+      "name": "Left rectus capitis lateralis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1576",
+      "name": "Left stylohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1577",
+      "name": "Left thyrohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1578",
+      "name": "Left digastric",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1579",
+      "name": "Right digastric",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1580",
+      "name": "Right geniohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1582",
+      "name": "Right longus capitis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1583",
+      "name": "Right mylohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1584",
+      "name": "Right obliquus capitis inferior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1585",
+      "name": "Right obliquus capitis superior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1588",
+      "name": "Right rectus capitis anterior",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1589",
+      "name": "Right rectus capitis posterior major",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1590",
+      "name": "Right rectus capitis posterior minor",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1591",
+      "name": "Right rectus capitis lateralis",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1598",
+      "name": "Right stylohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1599",
+      "name": "Right thyrohyoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1600",
+      "name": "Superior oblique part of left longus colli",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ2774",
+      "name": "Left aryepiglotticus",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ2785",
+      "name": "Left thyro-arytenoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ2791",
+      "name": "Right aryepiglotticus",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ2803",
+      "name": "Right thyro-arytenoid",
+      "previous": "head-muscles",
+      "corrected": "neck-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1411",
+      "name": "Right fibularis tertius",
+      "previous": "right-foot-muscles",
+      "corrected": "right-calf-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1411M",
+      "name": "Left fibularis tertius",
+      "previous": "left-foot-muscles",
+      "corrected": "left-calf-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1404",
+      "name": "Right adductor minimus",
+      "previous": "pelvic-muscles",
+      "corrected": "right-thigh-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1404M",
+      "name": "Left adductor minimus",
+      "previous": "pelvic-muscles",
+      "corrected": "left-thigh-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1427",
+      "name": "Right pectineus",
+      "previous": "pelvic-muscles",
+      "corrected": "right-thigh-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1427M",
+      "name": "Left pectineus",
+      "previous": "pelvic-muscles",
+      "corrected": "left-thigh-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1419",
+      "name": "Right gluteus medius",
+      "previous": "abdominal-muscles",
+      "corrected": "pelvic-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1419M",
+      "name": "Left gluteus medius",
+      "previous": "abdominal-muscles",
+      "corrected": "pelvic-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1468",
+      "name": "Clavicular part of right deltoid",
+      "previous": "chest-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1468M",
+      "name": "Clavicular part of left deltoid",
+      "previous": "chest-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1504",
+      "name": "Right subscapularis",
+      "previous": "chest-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1504M",
+      "name": "Left subscapularis",
+      "previous": "chest-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1506",
+      "name": "Right supraspinatus",
+      "previous": "chest-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1506M",
+      "name": "Left supraspinatus",
+      "previous": "chest-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1508",
+      "name": "Right teres minor",
+      "previous": "chest-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1508M",
+      "name": "Left teres minor",
+      "previous": "chest-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1460",
+      "name": "Right subclavius",
+      "previous": "neck-muscles",
+      "corrected": "chest-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1460M",
+      "name": "Left subclavius",
+      "previous": "neck-muscles",
+      "corrected": "chest-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1537",
+      "name": "Right rhomboid minor",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1537M",
+      "name": "Left rhomboid minor",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1542",
+      "name": "Right serratus posterior superior",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1542M",
+      "name": "Left serratus posterior superior",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1543",
+      "name": "spinalis",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1543M",
+      "name": "Spinalis",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1551",
+      "name": "Right interspinalis thoracis",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1551M",
+      "name": "Left interspinalis thoracis",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1554",
+      "name": "Transverse part of right trapezius",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1554M",
+      "name": "Transverse part of left trapezius",
+      "previous": "neck-muscles",
+      "corrected": "back-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1500",
+      "name": "Right infraspinatus muscle",
+      "previous": "back-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1500M",
+      "name": "Left infraspinatus muscle",
+      "previous": "back-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1507",
+      "name": "Right teres major",
+      "previous": "back-muscles",
+      "corrected": "right-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1507M",
+      "name": "Left teres major",
+      "previous": "back-muscles",
+      "corrected": "left-upper-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1466",
+      "name": "Abductor digiti minimi of right hand",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1469",
+      "name": "Left flexor pollicis brevis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1470",
+      "name": "Flexor digiti minimi brevis of right hand",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1481",
+      "name": "Oblique head of right adductor pollicis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1482",
+      "name": "Opponens digiti minimi of right hand",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1483",
+      "name": "Right abductor pollicis brevis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1501",
+      "name": "Right opponens pollicis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1509",
+      "name": "Set of dorsal interossei of right hand",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1511",
+      "name": "Set of palmar interossei of right hand",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1514",
+      "name": "Superficial head of right flexor pollicis brevis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1515",
+      "name": "Transverse head of right adductor pollicis",
+      "previous": "right-forearm-muscles",
+      "corrected": "right-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1466M",
+      "name": "Abductor digiti minimi of left hand",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1469M",
+      "name": "Right flexor pollicis brevis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1470M",
+      "name": "Flexor digiti minimi brevis of left hand",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1481M",
+      "name": "Oblique head of left adductor pollicis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1482M",
+      "name": "Opponens digiti minimi of left hand",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1483M",
+      "name": "Left abductor pollicis brevis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1501M",
+      "name": "Left opponens pollicis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1509M",
+      "name": "Set of dorsal interossei of left hand",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1511M",
+      "name": "Set of palmar interossei of left hand",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1514M",
+      "name": "Superficial head of left flexor pollicis brevis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    },
+    {
+      "sourceId": "FJ1515M",
+      "name": "Transverse head of left adductor pollicis",
+      "previous": "left-forearm-muscles",
+      "corrected": "left-hand-muscles",
+      "reason": "Named regional anatomy replaces coordinate-threshold grouping"
+    }
+  ],
+  "hraDuplicateNodesRemoved": [
+    {
+      "structure": "vagina",
+      "node": 432,
+      "previousOccurrences": 2,
+      "correctedOccurrences": 1,
+      "retainedGeometry": "Byte-identical positions and normals; indices rebased"
+    }
+  ],
+  "aggregateInventoryCorrection": {
+    "parent": "brain",
+    "includedExistingChildSources": [
+      "FJ1782",
+      "FJ1753",
+      "FJ1827",
+      "FJ1829",
+      "FJ1742"
+    ],
+    "display": "Existing child surfaces unchanged"
+  },
+  "sourceLabelExceptions": [
+    {
+      "ids": [
+        "FJ1469",
+        "FJ1469M"
+      ],
+      "issue": "Reversed left/right names in upstream thumb-muscle elements",
+      "handling": "Native coordinates and correct physical side retained; assigned to intrinsic hand muscles"
+    }
+  ],
+  "spine": {
+    "cervicalVertebrae": 7,
+    "thoracicVertebrae": 12,
+    "lumbarVertebrae": 5,
+    "intervertebralDiscs": 23,
+    "sacrum": "Retained in sex-specific pelvis references; no synthetic coccyx segmentation"
+  },
+  "unchangedGeometryByteChecks": 154,
+  "sources": [
+    "https://github.com/ashemag/human-atlas",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  ],
+  "limits": [
+    "Source-based educational audit, not clinical anatomical certification",
+    "Selected anatomy, not a complete inventory of all human organs, vessels, nerves or tissue layers",
+    "Common male-based reference plus documented HRA female pelvis and lung registrations; no claim of a complete female body scan",
+    "Reference shapes, gaps and source segmentation limits are preserved; no fabricated anatomy"
+  ]
+}
